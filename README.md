@@ -32,7 +32,7 @@ When scaling multi-brand e-commerce portfolios, maintaining visual cohesion whil
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/franku69/apex-design-system.git
+   git clone https://github.com/moky12345/apex-design-system.git
    cd apex-design-system
    ```
 2. Open `index.html` in any web browser.
