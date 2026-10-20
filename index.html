@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex UI | Multi-Brand E-Commerce Design System</title>
+  <meta name="description" content="Production-ready e-commerce design system and UI component library engineered by Karl Andre Gutierrez for high-converting multi-brand digital stores.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ds-layout">
+    <!-- Sidebar -->
+    <aside class="ds-sidebar">
+      <div class="ds-brand">
+        <div class="ds-logo-mark">▲</div>
+        <div>
+          <div class="ds-brand-title">Apex UI</div>
+          <div class="ds-brand-sub">Design System v1.2</div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="ds-nav-group">
+          <div class="ds-nav-heading">Foundations</div>
+          <a href="#colors" class="ds-nav-link active">Color Tokens</a>
+          <a href="#typography" class="ds-nav-link">Typography Scale</a>
+          <a href="#elevation" class="ds-nav-link">Elevation & Radii</a>
+        </div>
+
+        <div class="ds-nav-group">
+          <div class="ds-nav-heading">Components</div>
+          <a href="#buttons" class="ds-nav-link">Action Buttons</a>
+          <a href="#badges" class="ds-nav-link">Conversion Badges</a>
+          <a href="#steppers" class="ds-nav-link">Quantity Steppers</a>
+          <a href="#ratings" class="ds-nav-link">Star Rating Modules</a>
+          <a href="#cards" class="ds-nav-link">Product Pricing Cards</a>
+          <a href="#toasts" class="ds-nav-link">Feedback Toasts</a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ds-main">
+      <header class="ds-header">
+        <div class="ds-header-tag">Design System & Component Library</div>
+        <h1>Apex UI Design System</h1>
+        <p>A standardized UI/UX component architecture engineered to maintain visual harmony and conversion performance across direct-to-consumer e-commerce brands.</p>
+      </header>
+
+      <!-- Section 1: Color Tokens -->
+      <section class="ds-section" id="colors">
+        <h2 class="ds-section-title">Color Tokens</h2>
+        <p class="ds-section-desc">Click any card to copy the corresponding CSS token value to your clipboard.</p>
+
+        <div class="color-grid">
+          <div class="color-card" onclick="copyHex('#1F382B', 'Primary Brand')">
+            <div class="color-swatch" style="background: #1F382B;"></div>
+            <div class="color-info">
+              <div class="color-name">Forest Primary</div>
+              <div class="color-hex"><span>#1F382B</span><span>Click</span></div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyHex('#C46D4E', 'Terracotta Accent')">
+            <div class="color-swatch" style="background: #C46D4E;"></div>
+            <div class="color-info">
+              <div class="color-name">Terracotta Accent</div>
+              <div class="color-hex"><span>#C46D4E</span><span>Click</span></div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyHex('#0F172A', 'Obsidian Neutral')">
+            <div class="color-swatch" style="background: #0F172A;"></div>
+            <div class="color-info">
+              <div class="color-name">Obsidian Neutral</div>
+              <div class="color-hex"><span>#0F172A</span><span>Click</span></div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyHex('#10B981', 'Success Green')">
+            <div class="color-swatch" style="background: #10B981;"></div>
+            <div class="color-info">
+              <div class="color-name">Success Metric</div>
+              <div class="color-hex"><span>#10B981</span><span>Click</span></div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyHex('#F59E0B', 'Amber Warning')">
+            <div class="color-swatch" style="background: #F59E0B;"></div>
+            <div class="color-info">
+              <div class="color-name">Amber Alert</div>
+              <div class="color-hex"><span>#F59E0B</span><span>Click</span></div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyHex('#EF4444', 'Urgency Danger')">
+            <div class="color-swatch" style="background: #EF4444;"></div>
+            <div class="color-info">
+              <div class="color-name">Scarcity Danger</div>
+              <div class="color-hex"><span>#EF4444</span><span>Click</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Action Buttons -->
+      <section class="ds-section" id="buttons">
+        <h2 class="ds-section-title">Action Buttons</h2>
+        <p class="ds-section-desc">High-contrast, accessible interactive triggers designed for Add to Cart and primary conversion funnels.</p>
+
+        <div class="component-card">
+          <div class="component-preview">
+            <button class="btn-apex-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/></svg>
+              <span>Primary Add to Cart</span>
+            </button>
+            <button class="btn-apex-secondary">Secondary Accent</button>
+            <button class="btn-apex-outline">Ghost / Outline</button>
+            <button class="btn-apex-outline" disabled style="opacity: 0.5; cursor: not-allowed;">Disabled State</button>
+          </div>
+          <div class="component-code-bar">
+            <code>&lt;button class="btn-apex-primary"&gt;Add to Cart&lt;/button&gt;</code>
+            <button class="btn-copy-code" onclick="copyCode('btn-apex-primary')">Copy Class</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Conversion Badges -->
+      <section class="ds-section" id="badges">
+        <h2 class="ds-section-title">Conversion Badges & Pills</h2>
+        <p class="ds-section-desc">Contextual micro-indicators to highlight stock status, verified purchases, and promotional incentives.</p>
+
+        <div class="component-card">
+          <div class="component-preview">
+            <span class="badge-apex success">✓ Verified Buyer</span>
+            <span class="badge-apex promo">Save 20% Bundle</span>
+            <span class="badge-apex warning">⚡ Only 4 Left in Stock</span>
+            <span class="badge-apex danger">Sold Out</span>
+          </div>
+          <div class="component-code-bar">
+            <code>&lt;span class="badge-apex success"&gt;✓ Verified Buyer&lt;/span&gt;</code>
+            <button class="btn-copy-code" onclick="copyCode('badge-apex success')">Copy Class</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Quantity Steppers -->
+      <section class="ds-section" id="steppers">
+        <h2 class="ds-section-title">Interactive Quantity Stepper</h2>
+        <p class="ds-section-desc">Accessible touch-friendly quantity modifier with bounds enforcement.</p>
+
+        <div class="component-card">
+          <div class="component-preview">
+            <div class="apex-stepper">
+              <button class="apex-stepper-btn" onclick="adjustDemoStepper(-1)">−</button>
+              <span class="apex-stepper-val" id="demoStepperVal">1</span>
+              <button class="apex-stepper-btn" onclick="adjustDemoStepper(1)">+</button>
+            </div>
+            <span style="font-size: 13px; color: var(--color-neutral-600);">Live interactive component</span>
+          </div>
+          <div class="component-code-bar">
+            <code>&lt;div class="apex-stepper"&gt;&lt;button&gt;−&lt;/button&gt;&lt;span&gt;1&lt;/span&gt;&lt;button&gt;+&lt;/button&gt;&lt;/div&gt;</code>
+            <button class="btn-copy-code" onclick="copyCode('apex-stepper')">Copy</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Star Rating Picker -->
+      <section class="ds-section" id="ratings">
+        <h2 class="ds-section-title">Star Rating Module</h2>
+        <p class="ds-section-desc">Hover and click to test dynamic user feedback rating interaction.</p>
+
+        <div class="component-card">
+          <div class="component-preview">
+            <div class="apex-rating" id="demoStarContainer">
+              <!-- Rendered via JS -->
+            </div>
+            <span style="font-size: 13.5px; font-weight: 700;" id="demoRatingLabel">5.0 / 5.0 (Click stars to rate)</span>
+          </div>
+          <div class="component-code-bar">
+            <code>&lt;div class="apex-rating" data-score="5"&gt;...&lt;/div&gt;</code>
+            <button class="btn-copy-code" onclick="copyCode('apex-rating')">Copy</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Interactive Toast Trigger -->
+      <section class="ds-section" id="toasts">
+        <h2 class="ds-section-title">Feedback Notifications</h2>
+        <p class="ds-section-desc">Non-intrusive feedback toast alerts to acknowledge customer actions.</p>
+
+        <div class="component-card">
+          <div class="component-preview">
+            <button class="btn-apex-outline" onclick="triggerDemoToast('Added 1x Botanical Serum to Bag!')">Trigger Success Toast</button>
+            <button class="btn-apex-outline" onclick="triggerDemoToast('Item saved to your wishlist!')">Trigger Wishlist Toast</button>
+          </div>
+          <div class="component-code-bar">
+            <code>triggerDemoToast(message)</code>
+            <button class="btn-copy-code" onclick="copyCode('triggerDemoToast')">Copy</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
